@@ -1,0 +1,19 @@
+tạo một thư mục của ứng dụng là app-chat. Trong này mình sẽ tạo tiếp 2 thư mục con là server và client.
+Oke, bước đầu tiên chúng ta sẽ cần tạo một server node.js express (framework express của Node)
+
+npm init
+npm i express socket.io --save
+npm i nodemon --save-dev
+Để sử dụng nodemon trên môi trường developement(dùng để reload lại server mỗi khi chúng ta sửa code)
+
+thêm một thuộc tính mới vào file package.json:
+"scripts": {
+"start": "nodemon index.js"
+}
+
+npm i
+npm start
+___________________________________________________________________________________
+https://viblo.asia/p/lap-trinh-ung-dung-chat-real-time-voi-reactjs-nodejs-va-socketio-ORNZqVeMl0n
+chạy socket cần mở đồng thời nhiều terminal, 1 terminal chạy socket-server(npm start), các 
+terminal khác chạy clients
